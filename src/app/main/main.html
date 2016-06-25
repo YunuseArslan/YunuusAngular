@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Comic+Sans+MS">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    </div>
+    <div class="jumbotron text-center">
+      <h1>Fon'Colle!</h1>
+    </div>
+    <div class="row">
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th colspan="5">Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-ng-repeat=" $items in vm.fontsList">
+            <td>#</td>
+            <td style="font-family:{{$items.family}}">{{ $items.family }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
